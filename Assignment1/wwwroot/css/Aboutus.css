@@ -1,0 +1,28 @@
+﻿body {
+    padding: 0%;
+    margin: 0%;
+    background-color: #f4f5f4;
+}
+
+.HEADING-ABOUT {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+}
+
+.Heading-About {
+    
+    padding: 30px 130px;
+}
+
+.Info-Passage {
+    width: 80%;
+    background-color: white;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.Info-Graph {
+    padding: 20px;
+}

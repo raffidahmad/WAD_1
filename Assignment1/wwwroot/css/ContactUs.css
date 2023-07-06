@@ -1,0 +1,20 @@
+﻿
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: #f4f5f4;
+}
+
+.Heading-CONTACT{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+}
+
+.Heading-Contact {
+    padding: 30px 130px;
+}
+
+.Accordian-ul li{
+    margin-left:20px;
+}

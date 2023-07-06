@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Assignment1</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Assignment1.styles.css" asp-append-version="true" />
+    <script src="https://kit.fontawesome.com/7583c2f65e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="~/css/ContactUs.css" />
+    <link rel="stylesheet" href="~/css/Aboutus.css" />
+</head>
+<body>
+    @*Navbar*@
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow " style="background-color:#f8d500">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold fst-italic ms-lg-5 fs-2" asp-area="" asp-controller="Home" asp-action="Index">Flipmart</a>
+                <div class="navbar-collapse collapse d-sm-inline-flex item ">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Women</a>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Men</a>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Electronics</a>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Furniture</a>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Pages</a>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Custom</a>
+                </div>
+                <form class="d-flex" role="search" class="">
+                    <input class="form-control me-2 rounded-pill ml-n5" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </nav>
+    </header>
+
+
+    @*Body*@
+    <main role="main" class="">
+        @RenderBody()
+    </main>
+
+    <div class="" style="background-color:#f8d500; display:flex; justify-content:space-between;">
+        <div class="flex mx-5 mt-2" style="padding:10px;">
+            <img style=" width:40px" src="/images/visa.png" />
+            <img style="width:40px" src="/images/master.png" />
+            <img style=" width:40px" src="/images/A-E.png" />
+            <img style=" width:40px" src="/images/payoneer.png" />
+        </div>
+        <div class="me-lg-5" style="display:flex;">
+            <p class="pt-4 me-3 text-black-50" style="align-items:center;">Sign up for emails </p>
+            <input style="border-radius:5px; border:none;padding-right:15rem;" class="my-3 me-2 ps-3" type="search" placeholder="Enter your email address" aria-label="Enter your email address ">
+            <div class="bg-danger my-3" style="border-radius:5px;">
+                <button type="button" class="btn" style=""><i class="fa-sharp fa-solid fa-envelope me-2"></i>Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    @*Footer*@
+    <footer class="text-muted box-shadow">
+        <div class="container">
+            <div class="row gap-3">
+                <div class="col border-end">
+                    <a class="text-black-50 fw-bold text-decoration-none" asp-area="" asp-controller="Home" asp-action="contactus">Contact Us</a>
+                    <div class="lh-lg mt-3 me-2">
+                        <p><i class="fa-solid fa-location-dot me-2"></i>ThemeGround Anytown, CA 12345 USA</p>
+                        <p><i class="fa-solid fa-phone me-2"></i>+(8882) 123-34567</p>
+                        <p><i class="fa-sharp fa-solid fa-envelope me-2"></i>Flipmart@themeground.com</p>
+                    </div>
+                    <div class="flex">
+                        <a asp-area="" asp-controller="Home" asp-action="index"><i class="fa-brands fa-facebook mx-2"></i></a>
+                        <a asp-area="" asp-controller="Home" asp-action="index"><i class="fa-brands fa-twitter mx-2"></i></a>
+                        <a asp-area="" asp-controller="Home" asp-action="index"><i class="fa-brands fa-google-plus-g mx-2"></i></a>
+                        <a asp-area="" asp-controller="Home" asp-action="index"><i class="fa-brands fa-linkedin-in mx-2"></i></a>
+                        <a asp-area="" asp-controller="Home" asp-action="index"><i class="fa-brands fa-youtube mx-2"></i></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <p class="fw-bold">Customer Service</p>
+                    <div class="lh-lg">
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none text-dark" asp-area="" asp-controller="Home" asp-action="index">My Account</a></li>
+                            <li><a class="text-decoration-none text-dark" asp-area="" asp-controller="Home" asp-action="index">Order History</a></li>
+                            <li><a class="text-decoration-none text-dark" asp-area="" asp-controller="Home" asp-action="index">FAQ</a></li>
+                            <li><a class="text-decoration-none text-dark" asp-area="" asp-controller="Home" asp-action="index">Specials</a></li>
+                            <li><a class="text-decoration-none text-dark" asp-area="" asp-controller="Home" asp-action="contactus">Help Center</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <p class="fw-bold">Corporation</p>
+                    <div class="lh-lg">
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none text-dark" asp-area="" asp-controller="Home" asp-action="Aboutus">About Us</a></li>
+                            <li><a class="text-decoration-none text-dark" asp-area="" asp-controller="Home" asp-action="index">Customer Service</a></li>
+                            <li><a class="text-decoration-none text-dark" asp-area="" asp-controller="Home" asp-action="index">Company</a></li>
+                            <li><a class="text-decoration-none text-dark" asp-area="" asp-controller="Home" asp-action="index">Investor Relations</a></li>
+                            <li><a class="text-decoration-none text-dark" asp-area="" asp-controller="Home" asp-action="index">Advanced Search</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <p class="fw-bold">Why Choose Us</p>
+                    <div class="lh-lg">
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none text-dark" asp-area="" asp-controller="Home" asp-action="index">Shopping Guide</a></li>
+                            <li><a class="text-decoration-none text-dark" asp-area="" asp-controller="Home" asp-action="index">Blog</a></li>
+                            <li><a class="text-decoration-none text-dark" asp-area="" asp-controller="Home" asp-action="index">Company</a></li>
+                            <li><a class="text-decoration-none text-dark" asp-area="" asp-controller="Home" asp-action="index">Investor Relations</a></li>
+                            <li><a class="text-decoration-none text-dark" asp-area="" asp-controller="Home" asp-action="contactus">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="text-dark ps-lg-5">
+            &copy; 2023 - Muhammad Tayyab - <a class="text-decoration-none text-dark fw-bold" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,35 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin:0px;
+  padding:0px;
+
+}
+.home{
+    background-image:url(/images/home.jpg);
+    height:600px;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.center{
+    text-align:center;
+}
+.item{
+    justify-content:center;
+}
+.item a:hover{
+  font-weight:700;
+}
